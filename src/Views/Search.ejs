@@ -24,7 +24,57 @@
         </form>
     </div>
 
-    <h1>Danh sách kết quả tìm kiếm:</h1>
+    <h1>Filter search:</h1>
+    <div class="checkbox-container">
+        <div class="checkbox-section">
+            <h5>Bus Time</h5>
+            <label class="checkbox-item">00:00 - 06:00
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-item">06:00 - 12:00
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-item">12:00 - 18:00
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-item">18:00 - 24:00
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox-section">
+            <h5>Type</h5>
+            <label class="checkbox-item">Normal
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-item">Sleeper bus
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-item">Limousine
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox-section">
+            <h5>Floor</h5>
+            <label class="checkbox-item">1st
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-item">2nd
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+
+
+    <h1>List of search results:</h1>
     <% bus.forEach(function(bus) { %>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -37,6 +87,10 @@
                 <p class="lead">Discription: <%= bus.Discription %>
                 </p>
                 <p class="lead">Total time: <%= bus.Total_time %>
+                </p>
+                <p class="lead">Start time: <%= bus.Start_time %>
+                </p>
+                <p class="lead">End time: <%= bus.End_time %>
                 </p>
             </div>
         </div>
