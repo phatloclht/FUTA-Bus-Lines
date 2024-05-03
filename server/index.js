@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const redis = require('redis');
 const cors = require('cors');
 const UserModel = require('./models/User');
 
@@ -31,5 +32,44 @@ app.post('/register', (req, res) => {
 });
 
 app.listen(3001, () => {
-  console.log('server is running');
+  console.log('server is running: ' + 3001);
+});
+
+
+app.get('/get-news', async (req, res) => {
+  console.log(req.query)
+  const { type } = req.query;
+  const client = redis.createClient();
+  await client.connect();
+  let maxObj = await client.hGetAll('futabus-line-max');
+  let max = parseInt(maxObj.max); // Chuyển đổi giá trị 'max' sang số nguyên
+
+  let index = 1;
+  let results = []; // Khởi tạo mảng kết quả
+
+  while (index <= max) { // Sử dụng dấu <= để so sánh
+    let ele = '';
+    ele = await client.hGetAll(type + ':' + index);
+    if (ele && Object.keys(ele).length > 0) {
+      ele['id'] = index;
+      results.push(ele);
+    }
+    index++; // Tăng index sau mỗi lần lặp
+  }
+
+  // console.log(results);
+  return res.json(results); // Trả về dữ liệu từ Redis
+
+});
+
+app.get('/get-new-detail', async (req, res) => {
+  const client = redis.createClient();
+  await client.connect();
+  const { id } = req.query; // Lấy giá trị của tham số ID từ query string
+  // Thực hiện logic để lấy dữ liệu tương ứng với ID
+  // Ví dụ: lấy dữ liệu từ cơ sở dữ liệu
+  let result = await client.hGetAll('futabus-line:' + id);
+  // Trả về dữ liệu
+  //console.log(result);
+  res.json(result);
 });

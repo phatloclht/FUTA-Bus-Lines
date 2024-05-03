@@ -1,0 +1,201 @@
+ await client.hSet('futabus-line-max', 'max', '6');
+ await client.hSet('futabus-line:1', 'title', 'FUTA ĐỒNG HÀNH CÙNG SHB - X3 QUÀ TẶNG')
+  await client.hSet('futabus-line:1', 'time', '14:35 26/07/2023')
+  await client.hSet('futabus-line:1', 'imageUrl', 'https://storage.googleapis.com/futa-busline-web-cms-prod/599_x_337_px_x2_70c927a0c2/599_x_337_px_x2_70c927a0c2.jpg')
+  await client.hSet('futabus-line:1', 'content', 
+`<div>Thời gian áp dụng: Từ ngày 06/06/2023 đến hết ngày 31/12/2023</div>
+
+<div>Cơ hội không thể bỏ lỡ dành cho Khách hàng thanh toán dịch vụ bằng tài khoản FUTAPay liên kết với tài khoản ngân hàng SHB.</div>
+
+<div>ƯU ĐÃI 1: TẶNG MÃ NẠP TIỀN ĐIỆN THOẠI TRỊ GIÁ 50.000đ</div>
+
+<div>Quý Khách mở tài khoản trực tuyến của SHB trên ứng dụng FUTA và nhận ngay mã nạp tiền điện thoại trị giá 50.000đ.</div>
+
+<div>Điều kiện sử dụng:</div>
+
+<div>• Số lượng mã “FUTA50” có hạn: Chỉ có 40.000 mã.</div>
+
+<div>• Mã giảm giá “FUTA50” chỉ sử dụng một lần trên App SHB Mobile cho giao dịch Nạp tiền điện thoại trực tuyến trên App SHB Mobile có mệnh giá từ 100.000đ trở lên.</div>
+
+<div>• Mã “FUTA50” có hiệu lực sử dụng đến hết ngày 31/12/2023.</div>
+
+<div>• Mã “FUTA50” không quy đổi thành tiền mặt.</div>
+
+<div>• Mỗi Khách hàng chỉ nhận được một mã ưu đãi trong suốt thời gian diễn ra chương trình.</div>
+
+<div>• Mã giảm giá “FUTA50” được lưu tại mục ô “Mã giảm giá” tại màn hình</div>
+
+<div>“Nạp tiền điện thoại’ trên SHB Mobile và được lưu tại biểu tượng quả chuông trên App SHB Mobile.</div> `)
+  
+  await client.hSet('futabus-line:1', 'title', 'FUTA ĐỒNG HÀNH CÙNG SHB - X3 QUÀ TẶNG')
+  await client.hSet('futabus-line:1', 'time', '14:35 26/07/2023')
+  await client.hSet('futabus-line:1', 'imageUrl', 'https://storage.googleapis.com/futa-busline-web-cms-prod/599_x_337_px_x2_70c927a0c2/599_x_337_px_x2_70c927a0c2.jpg')
+  await client.hSet('futabus-line:1', 'content',
+    `<div>Thời gian áp dụng: Từ ngày 06/06/2023 đến hết ngày 31/12/2023</div>
+
+<div>Cơ hội không thể bỏ lỡ dành cho Khách hàng thanh toán dịch vụ bằng tài khoản FUTAPay liên kết với tài khoản ngân hàng SHB.</div>
+
+<div>ƯU ĐÃI 1: TẶNG MÃ NẠP TIỀN ĐIỆN THOẠI TRỊ GIÁ 50.000đ</div>
+
+<div>Quý Khách mở tài khoản trực tuyến của SHB trên ứng dụng FUTA và nhận ngay mã nạp tiền điện thoại trị giá 50.000đ.</div>
+
+<div>Điều kiện sử dụng:</div>
+
+<div>• Số lượng mã “FUTA50” có hạn: Chỉ có 40.000 mã.</div>
+
+<div>• Mã giảm giá “FUTA50” chỉ sử dụng một lần trên App SHB Mobile cho giao dịch Nạp tiền điện thoại trực tuyến trên App SHB Mobile có mệnh giá từ 100.000đ trở lên.</div>
+
+<div>• Mã “FUTA50” có hiệu lực sử dụng đến hết ngày 31/12/2023.</div>
+
+<div>• Mã “FUTA50” không quy đổi thành tiền mặt.</div>
+
+<div>• Mỗi Khách hàng chỉ nhận được một mã ưu đãi trong suốt thời gian diễn ra chương trình.</div>
+
+<div>• Mã giảm giá “FUTA50” được lưu tại mục ô “Mã giảm giá” tại màn hình</div>
+
+<div>“Nạp tiền điện thoại’ trên SHB Mobile và được lưu tại biểu tượng quả chuông trên App SHB Mobile.</div> `)
+
+
+await client.hSet('futabus-line:2', 'title', 'FUTA ĐỒNG HÀNH - X3 QUÀ TẶNG')
+  await client.hSet('futabus-line:2', 'time', '14:35 26/07/2023')
+  await client.hSet('futabus-line:2', 'imageUrl', 'https://storage.googleapis.com/futa-busline-web-cms-prod/Artboard_2_4x_1_11eaaecc61/Artboard_2_4x_1_11eaaecc61.png')
+  await client.hSet('futabus-line:2', 'content', 
+`<div>Thời gian áp dụng: Từ ngày 06/06/2023 đến hết ngày 31/12/2023</div>
+
+<div>Cơ hội không thể bỏ lỡ dành cho Khách hàng thanh toán dịch vụ bằng tài khoản FUTAPay liên kết với tài khoản ngân hàng SHB.</div>
+
+<div>ƯU ĐÃI 1: TẶNG MÃ NẠP TIỀN ĐIỆN THOẠI TRỊ GIÁ 50.000đ</div>
+
+<div>Quý Khách mở tài khoản trực tuyến của SHB trên ứng dụng FUTA và nhận ngay mã nạp tiền điện thoại trị giá 50.000đ.</div>
+
+<div>Điều kiện sử dụng:</div>
+
+<div>• Số lượng mã “FUTA50” có hạn: Chỉ có 40.000 mã.</div>
+
+<div>• Mã giảm giá “FUTA50” chỉ sử dụng một lần trên App SHB Mobile cho giao dịch Nạp tiền điện thoại trực tuyến trên App SHB Mobile có mệnh giá từ 100.000đ trở lên.</div>
+
+<div>• Mã “FUTA50” có hiệu lực sử dụng đến hết ngày 31/12/2023.</div>
+
+<div>• Mã “FUTA50” không quy đổi thành tiền mặt.</div>
+
+<div>• Mỗi Khách hàng chỉ nhận được một mã ưu đãi trong suốt thời gian diễn ra chương trình.</div>
+
+<div>• Mã giảm giá “FUTA50” được lưu tại mục ô “Mã giảm giá” tại màn hình</div>
+
+<div>“Nạp tiền điện thoại’ trên SHB Mobile và được lưu tại biểu tượng quả chuông trên App SHB Mobile.</div> `)
+  
+
+  await client.hSet('futabus-line:3', 'title', 'CHÚC MỪNG NĂM MỚI')
+  await client.hSet('futabus-line:3', 'time', '14:35 26/07/2023')
+  await client.hSet('futabus-line:3', 'imageUrl', 'https://storage.googleapis.com/futa-busline-web-cms-prod/599x337_7086fb2b4f/599x337_7086fb2b4f.png')
+  await client.hSet('futabus-line:3', 'content',
+    `<div>Thời gian áp dụng: Từ ngày 06/06/2023 đến hết ngày 31/12/2023</div>
+
+<div>Cơ hội không thể bỏ lỡ dành cho Khách hàng thanh toán dịch vụ bằng tài khoản FUTAPay liên kết với tài khoản ngân hàng SHB.</div>
+
+<div>ƯU ĐÃI 1: TẶNG MÃ NẠP TIỀN ĐIỆN THOẠI TRỊ GIÁ 50.000đ</div>
+
+<div>Quý Khách mở tài khoản trực tuyến của SHB trên ứng dụng FUTA và nhận ngay mã nạp tiền điện thoại trị giá 50.000đ.</div>
+
+<div>Điều kiện sử dụng:</div>
+
+<div>• Số lượng mã “FUTA50” có hạn: Chỉ có 40.000 mã.</div>
+
+<div>• Mã giảm giá “FUTA50” chỉ sử dụng một lần trên App SHB Mobile cho giao dịch Nạp tiền điện thoại trực tuyến trên App SHB Mobile có mệnh giá từ 100.000đ trở lên.</div>
+
+<div>• Mã “FUTA50” có hiệu lực sử dụng đến hết ngày 31/12/2023.</div>
+
+<div>• Mã “FUTA50” không quy đổi thành tiền mặt.</div>
+
+<div>• Mỗi Khách hàng chỉ nhận được một mã ưu đãi trong suốt thời gian diễn ra chương trình.</div>
+
+<div>• Mã giảm giá “FUTA50” được lưu tại mục ô “Mã giảm giá” tại màn hình</div>
+
+<div>“Nạp tiền điện thoại’ trên SHB Mobile và được lưu tại biểu tượng quả chuông trên App SHB Mobile.</div> `)
+
+
+  await client.hSet('futabus-line:4', 'title', 'FUTA ĐỒNG HÀNH CÙNG SHB - X3 QUÀ TẶNG')
+  await client.hSet('futabus-line:4', 'time', '14:35 26/07/2023')
+  await client.hSet('futabus-line:4', 'imageUrl', 'https://storage.googleapis.com/futa-busline-web-cms-prod/599_x_337_px_min_f4d6bf9dec/599_x_337_px_min_f4d6bf9dec.png')
+  await client.hSet('futabus-line:4', 'content',
+    `<div>Thời gian áp dụng: Từ ngày 06/06/2023 đến hết ngày 31/12/2023</div>
+
+<div>Cơ hội không thể bỏ lỡ dành cho Khách hàng thanh toán dịch vụ bằng tài khoản FUTAPay liên kết với tài khoản ngân hàng SHB.</div>
+
+<div>ƯU ĐÃI 1: TẶNG MÃ NẠP TIỀN ĐIỆN THOẠI TRỊ GIÁ 50.000đ</div>
+
+<div>Quý Khách mở tài khoản trực tuyến của SHB trên ứng dụng FUTA và nhận ngay mã nạp tiền điện thoại trị giá 50.000đ.</div>
+
+<div>Điều kiện sử dụng:</div>
+
+<div>• Số lượng mã “FUTA50” có hạn: Chỉ có 40.000 mã.</div>
+
+<div>• Mã giảm giá “FUTA50” chỉ sử dụng một lần trên App SHB Mobile cho giao dịch Nạp tiền điện thoại trực tuyến trên App SHB Mobile có mệnh giá từ 100.000đ trở lên.</div>
+
+<div>• Mã “FUTA50” có hiệu lực sử dụng đến hết ngày 31/12/2023.</div>
+
+<div>• Mã “FUTA50” không quy đổi thành tiền mặt.</div>
+
+<div>• Mỗi Khách hàng chỉ nhận được một mã ưu đãi trong suốt thời gian diễn ra chương trình.</div>
+
+<div>• Mã giảm giá “FUTA50” được lưu tại mục ô “Mã giảm giá” tại màn hình</div>
+
+<div>“Nạp tiền điện thoại’ trên SHB Mobile và được lưu tại biểu tượng quả chuông trên App SHB Mobile.</div> `)
+
+
+  await client.hSet('futabus-line:5', 'title', 'FUTA ĐỒNG HÀNH CÙNG SHB - X3 QUÀ TẶNG')
+  await client.hSet('futabus-line:5', 'time', '14:35 26/07/2023')
+  await client.hSet('futabus-line:5', 'imageUrl', 'https://storage.googleapis.com/futa-busline-web-cms-prod/599_x_337_px_x2_70c927a0c2/599_x_337_px_x2_70c927a0c2.jpg')
+  await client.hSet('futabus-line:5', 'content',
+    `<div>Thời gian áp dụng: Từ ngày 06/06/2023 đến hết ngày 31/12/2023</div>
+
+<div>Cơ hội không thể bỏ lỡ dành cho Khách hàng thanh toán dịch vụ bằng tài khoản FUTAPay liên kết với tài khoản ngân hàng SHB.</div>
+
+<div>ƯU ĐÃI 1: TẶNG MÃ NẠP TIỀN ĐIỆN THOẠI TRỊ GIÁ 50.000đ</div>
+
+<div>Quý Khách mở tài khoản trực tuyến của SHB trên ứng dụng FUTA và nhận ngay mã nạp tiền điện thoại trị giá 50.000đ.</div>
+
+<div>Điều kiện sử dụng:</div>
+
+<div>• Số lượng mã “FUTA50” có hạn: Chỉ có 40.000 mã.</div>
+
+<div>• Mã giảm giá “FUTA50” chỉ sử dụng một lần trên App SHB Mobile cho giao dịch Nạp tiền điện thoại trực tuyến trên App SHB Mobile có mệnh giá từ 100.000đ trở lên.</div>
+
+<div>• Mã “FUTA50” có hiệu lực sử dụng đến hết ngày 31/12/2023.</div>
+
+<div>• Mã “FUTA50” không quy đổi thành tiền mặt.</div>
+
+<div>• Mỗi Khách hàng chỉ nhận được một mã ưu đãi trong suốt thời gian diễn ra chương trình.</div>
+
+<div>• Mã giảm giá “FUTA50” được lưu tại mục ô “Mã giảm giá” tại màn hình</div>
+
+<div>“Nạp tiền điện thoại’ trên SHB Mobile và được lưu tại biểu tượng quả chuông trên App SHB Mobile.</div> `)
+
+
+  await client.hSet('futabus-line:6', 'title', 'FUTA ĐỒNG HÀNH CÙNG SHB - X3 QUÀ TẶNG')
+  await client.hSet('futabus-line:6', 'time', '14:35 26/07/2023')
+  await client.hSet('futabus-line:6', 'imageUrl', 'https://storage.googleapis.com/futa-busline-web-cms-prod/599x337_7086fb2b4f/599x337_7086fb2b4f.png')
+  await client.hSet('futabus-line:6', 'content',
+    `<div>Thời gian áp dụng: Từ ngày 06/06/2023 đến hết ngày 31/12/2023</div>
+
+<div>Cơ hội không thể bỏ lỡ dành cho Khách hàng thanh toán dịch vụ bằng tài khoản FUTAPay liên kết với tài khoản ngân hàng SHB.</div>
+
+<div>ƯU ĐÃI 1: TẶNG MÃ NẠP TIỀN ĐIỆN THOẠI TRỊ GIÁ 50.000đ</div>
+
+<div>Quý Khách mở tài khoản trực tuyến của SHB trên ứng dụng FUTA và nhận ngay mã nạp tiền điện thoại trị giá 50.000đ.</div>
+
+<div>Điều kiện sử dụng:</div>
+
+<div>• Số lượng mã “FUTA50” có hạn: Chỉ có 40.000 mã.</div>
+
+<div>• Mã giảm giá “FUTA50” chỉ sử dụng một lần trên App SHB Mobile cho giao dịch Nạp tiền điện thoại trực tuyến trên App SHB Mobile có mệnh giá từ 100.000đ trở lên.</div>
+
+<div>• Mã “FUTA50” có hiệu lực sử dụng đến hết ngày 31/12/2023.</div>
+
+<div>• Mã “FUTA50” không quy đổi thành tiền mặt.</div>
+
+<div>• Mỗi Khách hàng chỉ nhận được một mã ưu đãi trong suốt thời gian diễn ra chương trình.</div>
+
+<div>• Mã giảm giá “FUTA50” được lưu tại mục ô “Mã giảm giá” tại màn hình</div>
+
+<div>“Nạp tiền điện thoại’ trên SHB Mobile và được lưu tại biểu tượng quả chuông trên App SHB Mobile.</div> `)
