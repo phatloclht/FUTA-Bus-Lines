@@ -8,15 +8,25 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+  const [phone, setPhone] = useState();
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const [gender, setGender] = useState();
+  const [birthday, setBirthday] = useState();
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3001/register', { name, email, password })
+      .post('http://localhost:3001/register', {
+        phone,
+        name,
+        email,
+        password,
+        gender,
+        birthday,
+      })
       .then((result) => {
         console.log(result);
         navigate('/login');
@@ -25,47 +35,63 @@ const Signup = () => {
   };
 
   return (
-    <div class='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"'>
-      <form class="max-w-sm mx-auto " onSubmit={handleSubmit}>
-        <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+    <div className='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"'>
+      <form className="max-w-sm mx-auto " onSubmit={handleSubmit}>
+        <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
           Create an account
         </h1>
-        <div class="mb-5">
+        <div className="mb-5">
           <label
             for="text"
-            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="flex mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
-            Name
+            Phone number
+          </label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter phone number"
+            required
+            onChange={(e) => setPhone(e.target.value)}
+          />
+        </div>
+        <div className="mb-5">
+          <label
+            for="text"
+            className="flex mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Fullname
           </label>
           <input
             type="text"
             id="text"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Enter name"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter fullname"
             required
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <div class="mb-5">
+        <div className="mb-5">
           <label
             for="email"
-            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="flex mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
             Email
           </label>
           <input
             type="email"
             id="email"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="name@gmail.com"
             required
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div class="mb-5">
+        <div className="mb-5">
           <label
             for="password"
-            class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="flex mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
             Password
           </label>
@@ -73,15 +99,47 @@ const Signup = () => {
             type="password"
             id="password"
             placeholder="password"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             required
             onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <div className="mb-5">
+          <label
+            for="gender"
+            className="flex mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Gender
+          </label>
+          <input
+            type="text"
+            id="gender"
+            placeholder="gender"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+            onChange={(e) => setGender(e.target.value)}
+          />
+        </div>
+        <div className="mb-5">
+          <label
+            for="birthday"
+            className="flex mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Birthday
+          </label>
+          <input
+            type="date"
+            id="birthday"
+            placeholder="dd/mm/yyyy"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+            onChange={(e) => setBirthday(e.target.value)}
           />
         </div>
 
         <button
           type="submit"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Register
         </button>
@@ -90,7 +148,7 @@ const Signup = () => {
       <Link to="/login">
         <button
           type="submit"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Login
         </button>
