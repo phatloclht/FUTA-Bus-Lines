@@ -37,7 +37,7 @@ app.listen(3001, () => {
 
 
 app.get('/get-news', async (req, res) => {
-  console.log(req.query)
+  // console.log(req.query)
   const { type } = req.query;
   const client = redis.createClient();
   await client.connect();
@@ -72,4 +72,32 @@ app.get('/get-new-detail', async (req, res) => {
   // Trả về dữ liệu
   //console.log(result);
   res.json(result);
+});
+
+app.post('/contact', async (req, res) => {
+
+  // const { name, email, phone, title, content } = req.body;
+  const client = redis.createClient();
+  await client.connect();
+  client.rPush('feedback', JSON.stringify(req.body), (err, reply) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log('Data inserted successfully:', reply);
+    }
+  });
+
+  await client.disconnect();
+});
+app.get('/get-contact', async (req, res) => {
+
+  // const { name, email, phone, title, content } = req.body;
+  const client = redis.createClient();
+  await client.connect();
+
+  
+  let results = await client.lRange('feedback', 0, -1);
+  res.json(results);
+  await client.disconnect();
+  //res.json('redis run');
 });
